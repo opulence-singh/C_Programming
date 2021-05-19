@@ -4,11 +4,14 @@ WAP to find factorial of a given number
 #include<stdio.h>
 int main(){
 	int n;
+	printf("Enter the number to find its Factorial : ");
 	scanf("%d",&n);
-	int factorial=1;
-	for(int i=1;i<=n;i++){
+	
+	int i,factorial=1;
+	for(i=1;i<=n;i++){
 		factorial*=i;
 	}
 	printf("%d\n",factorial );
+	printf("Is the Factorial ");
 	return 0;
 }
