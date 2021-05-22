@@ -3,13 +3,12 @@
 
 int main()
 {
-   int a,b,c,d,e,sum;
-   float per;
+   float a,b,c,d,e,sum,per;
 	printf("Enter Marks of the student: ");
-	scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+	scanf("%f %f %f %f %f",&a,&b,&c,&d,&e);
 	sum=a+b+c+d+e;
 	per=sum/5;
-	printf("\nSum %d",sum);
+	printf("\nSum %f",sum);
     printf("\nPercentage: %f",per);
 	return 0;
 }
