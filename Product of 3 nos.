@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int a,b,c,mul;
+	printf("Enter 3 numbers to find their Product: ");
+	scanf("%d %d %d",&a,&b,&c);
+	mul=a*b*c;
+	printf("\nMultiplication Result : %d",mul);
+    return 0;
+}
