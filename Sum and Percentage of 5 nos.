@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int a,b,c,d,e,sum,per;
+	printf("Enter Marks of the student: ");
+	scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+	sum=a+b+c+d+e;
+	per=sum/5;
+	printf("\nSum %d",sum);
+    printf("\nPercentage: %d",per);
+	return 0;
+}
