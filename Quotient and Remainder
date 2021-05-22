@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int a,b,c,q,r;
+	printf("Enter 2 numbers to find their Quotient & Remainder: ");
+	scanf("%d %d",&a,&b);
+	q=a/b;
+	r=a%b;
+	printf("\nQuotient: %d",q);
+    printf("\nRemainder: %d",r);
+	return 0;
+}
