@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main(){
+    char choice;
+    printf("Enter your choice(y/n) : ");
+	scanf("%c",&choice);
+	switch(choice)
+	{
+	case 'y':
+	printf("HI");
+	break;
+    case 'n':
+	printf("BYE");
+	break;
+	default:
+	printf("I do not know");
+	}
+	return 0;
+}
