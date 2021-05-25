@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main(){
+    
+	float i,j;
+    char choice;
+    printf("Enter 2 numbers : ");
+	scanf("%f %f",&i,&j);
+    printf("Enter your choice(+,-,*,/) : ");
+	scanf("%s",&choice);
+	switch(choice)
+	{
+	case '+':
+	printf("SUM %f", i+j);
+	break;
+    case '-':
+	printf("DIFFERENCE %f", i-j);
+	break;
+	case '*':
+	printf("PRODUCT %f", i*j);
+	break;
+	case '/':
+	printf("DIVISION %f", i/j);
+	break;
+	default:
+	printf("I do not know");
+	}
+	return 0;
+}
