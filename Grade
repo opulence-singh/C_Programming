@@ -4,17 +4,16 @@
 int main()
 {
   float a,b,c,d,e,sum,per;
-	printf("Enter Marks of the student: ");
+  	printf("Enter Marks of the student: ");
 	scanf("%f %f %f %f %f",&a,&b,&c,&d,&e);
- sum=a+b+c+d+e;
+ 	sum=a+b+c+d+e;
 	per=sum/5;
 	printf("\nSum %f",sum);
-    printf("\nPercentage: %f",per);
+    	printf("\nPercentage: %f",per);
     
     if(per<60)
        	printf("\nGrade: C");
-
-	else if(per>60&&per<70)
+    else if(per>60&&per<70)
        	printf("\nGrade: B");
        	
     else if(per<70&&per<80)
@@ -22,8 +21,8 @@ int main()
        	
     else if(per>80&&per<90)
        	printf("\nGrade: S");
-
-	else
+    
+    else
        	printf("\n\n\tGod MODE");
 
 	return 0;
