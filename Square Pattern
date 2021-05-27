@@ -1,0 +1,29 @@
+#include <stdlib.h>
+#include<stdio.h>
+int main(){
+	int n;
+	printf("Enter the size of square: ");
+	scanf("%d",&n);
+	
+	int i,j,k,l,t;
+	for(i=0;i<n;i++)
+		printf("_");
+	
+  printf("\n");
+	
+  t=0.5*n;
+	for(j=0;j<t;j++){
+		printf("|");
+		for(k=2;k<n;k++)
+			printf(" ");
+		printf("|");
+		printf("\n");
+	}
+	
+	for(k=0;k<n;k++)
+		printf("-");
+	
+  printf("\n");	
+
+	return 0;
+}
