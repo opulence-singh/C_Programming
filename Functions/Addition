@@ -1,0 +1,22 @@
+#include <stdlib.h>
+#include<stdio.h>
+
+int add(int ,int);
+
+
+int main()
+{    
+    int a,b,result;
+    printf("Enter Two numbers \n");
+    scanf("%d %d", &a,&b);
+	result=add(a,b);
+	printf("Answer %d\n",result);
+    return 0;
+}
+
+int add(int n1,int n2)
+{
+	int x;
+	x=n1+n2;
+	return x;
+}
