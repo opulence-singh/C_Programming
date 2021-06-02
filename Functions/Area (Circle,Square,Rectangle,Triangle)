@@ -1,0 +1,78 @@
+#include <stdlib.h>
+#include<stdio.h>
+#define PI 3.14
+
+int ar_c(int);
+int ar_s(int);
+int ar_r(int ,int);
+int ar_t(int ,int);
+int main()
+{    
+    int result,n;
+    printf("Find the area of \n");
+    printf("1)Circle \n");
+    printf("2)Square \n");
+    printf("3)Recatngle \n");
+    printf("4)Triangle \n");
+    scanf("%d", &n);
+    
+	switch (n){
+	case 1:
+		int r;
+		printf("Enter radius \n");
+		scanf("%d", &r);
+		result=ar_c(r);
+		break;
+	case 2:
+		int  s;
+		printf("Enter side \n");
+    	scanf("%d", &r);
+		result=ar_s(r);
+		break;
+	case 3:
+		int l,b;
+		printf("Enter length and breadth \n");
+    	scanf("%d %d", &l,&b);
+		result=ar_r(l,b);
+		break;
+	case 4:
+		int ba,h;
+		printf("Enter base and height \n");
+    	scanf("%d %d", &ba,&h);
+		result=ar_r(ba,h);
+		break;
+	default:
+	printf("Enter a valid option(1,2,3,4) \n");	
+	}
+
+	printf("Answer %d\n",result);
+    return 0;
+}
+
+int ar_c(int r)
+{
+	int x;
+	x=PI*r*r;
+	return x;
+}
+
+int ar_s(int s)
+{
+	int x;
+	x=s*s;
+	return x;
+}
+
+int ar_r(int l,int b)
+{
+	int x;
+	x=l*b;
+	return x;x`
+}
+
+int ar_t(int b,int h)
+{
+	int x;
+	x=0.5*b*h;
+	return x;
+}
